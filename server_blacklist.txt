@@ -1,0 +1,15 @@
+"serverblacklist"
+{
+	"server"
+	{
+		"name"		"Valve tf Server #13 (srcds126.iad-1)"
+		"date"		"1312253405"
+		"addr"		"68.177.101.39:27027"
+	}
+	"server"
+	{
+		"name"		"Valve tf Server (srcds063.sea-1 #9)"
+		"date"		"1344803973"
+		"addr"		"208.64.202.178:27023"
+	}
+}
