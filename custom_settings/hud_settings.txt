@@ -1,0 +1,126 @@
+#tf_english.txt
+
+"TF_Scoreboard_Name"			""
+"TF_Scoreboard_Score"			""
+"TF_Scoreboard_Ping"			""
+
+"Scoreboard_Server"			"Server: %s1"
+"Scoreboard_TimeLeft"			"%s1:%s2:%s3"
+"Scoreboard_TimeLeftNoHours"		"%s1:%s2"
+"Scoreboard_NoTimeLimit"		""
+"Scoreboard_ChangeOnRoundEnd"		""
+
+-------------------------------------------------
+
+#hudlayout.res
+
+	"OmpCrosshairPlus"
+	{
+		"controlName" "CExLabel"
+		"fieldName" "OmpCrosshairPlus"
+		"font" "SymbolSharp24"
+		"fgcolor" "255 0 255 255 "
+		"labelText" "+"
+		"xpos" "c-100"
+		"ypos" "c-103"
+		"wide" "200"
+		"tall" "200"
+		"visible" "1"
+		"enabled" "1"
+		"textAlignment" "center"
+	}
+
+	"OmpCrosshairPlusSmall"
+	{
+		"controlName" "CExLabel"
+		"fieldName" "OmpCrosshairPlusSmall"
+		"font" "CrosshairsSharp15"
+		"fgcolor" "255 255 0 255"
+		"labelText" "2"
+		"xpos" "c-101"
+		"ypos" "c-100"
+		"wide" "200"
+		"tall" "202"
+		"visible" "1"
+		"enabled" "1"
+		"textAlignment" "center"
+	}
+	
+	"OmpCrosshairDot"
+	{
+		"controlName" "CExLabel"
+		"fieldName" "OmpCrosshairDot"
+		"font" "Crosshairs22"
+		"fgcolor" "255 0 255 255"
+		"labelText" "3"
+		"xpos" "c-103"
+		"ypos" "c-100"
+		"wide" "201"
+		"tall" "201"
+		"visible" "0"
+		"enabled" "0"
+		"textAlignment" "center"
+	}
+
+	"OmpCrosshairCircle"
+	{
+		"controlName" "CExLabel"
+		"fieldName" "OmpCrosshairCircle"
+		"font" "Crosshairs40"
+		"fgcolor" "225 225 225 30"
+		"labelText" "9"
+		"xpos" "c-100"
+		"ypos" "c-96"
+		"wide" "201"
+		"tall" "200"
+		"visible" "1"
+		"enabled" "1"
+		"textAlignment" "center"
+	}
+   
+-------------------------------------------------
+
+#HudAnimations_tf.txt
+
+event DamagedPlayer
+{
+	//Animate	OmpCrosshairPlus		FgColor "255 0 0 255"		Accel 0.0 0.0
+	//Animate	OmpCrosshairPlus		FgColor "255 0 255 255"		Accel 0.2 0.0
+
+	//Animate	OmpCrosshairPlusSmall	FgColor "255 0 0 255"		Accel 0.0 0.0
+	//Animate	OmpCrosshairPlusSmall	FgColor "255 0 255 255"		Accel 0.2 0.0
+
+	//Animate	OmpCrosshairDot			FgColor "255 0 0 255"		Accel 0.0 0.0
+	//Animate	OmpCrosshairDot			FgColor "255 0 255 255"		Accel 0.2 0.0
+
+	Animate	OmpCrosshairCircle		FgColor "255 0 0 255"		Accel 0.0 0.0
+	Animate	OmpCrosshairCircle		FgColor "225 225 225 30"	Accel 0.2 0.0
+}
+
+-------------------------------------------------
+
+#scoreboard.res
+
+	"scores"
+	{
+		"ControlName"		"CTFClientScoreBoardDialog"
+		"fieldName"		"scoreinfo"
+		"xpos"			"0"
+		"ypos"			"0"
+		"wide"			"f0"
+		"tall"			"480"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"0"
+		"tabPosition"		"0"
+		"status_width"		"15"
+		"nemesis_width"		"15"
+		"class_width"		"15"
+		"ping_width"		"23"
+		"score_width"		"1000000"
+		"avatar_width"		"2"
+		"name_width"		"750"
+	}
+   
+-------------------------------------------------
